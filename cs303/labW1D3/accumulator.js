@@ -2,10 +2,18 @@
 
 /**
  * 
-
- * @returns {Accumulator} constructor function
+ 
+ * @returns{Accumulator} constructor function
  */
-function Accumulator(){
-//implement this
-
-}
+ function Accumulator(currentValue,increment){
+    this.currentValue=currentValue;
+    this.increment=increment;
+    this.accumulate=function(){
+    return this.currentValue+=this.increment;
+     }
+    this.report=function(){
+    return this.currentValue;
+     }
+    //implement this
+     
+    }

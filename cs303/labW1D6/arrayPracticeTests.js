@@ -67,28 +67,54 @@ describe("filter practice", function () {
     });
 
     /* complete the following similar to includes even test */
-    it("includes even age -- write this test");
-    
+   
+
+/* complete the following similar to includes even test */
+it("includes even ages", function () {
+    assert.strictEqual(includesEvenAge(peopleArray), true);
+    const peopleOddAge = [{ name: "Sam", age: 15 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 81  }];
+    assert.strictEqual(includesEvenAge(peopleOddAge), false);
+});
+//////////////////////////////
 
 
 
-    it("includes even", function () {
-        assert.strictEqual(numArray.includes(77), true);
-        assert.strictEqual(numArray.includes(15), false);
-    });
- 
-    /* complete the following similar to includes even test */
-    //it("includes even age -- write this test");
- 
-    it("includes even", function () {
-      assert.strictEqual(numArray.includes(100), false);
-      assert.strictEqual(numArray.includes(300), true);
-  });
- 
-  it("find even age ", function () {
-  //  assert.deepEqual(includesEvenAge(peopleArray),[{ name: "William", age: 6 },{ name: "Barney", age: 80 }])//{ name: "Barney", age: 80 }]);
-     const peopleOddAge = [{ name: "Sam", age: 13 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 81  }];
-     assert.deepEqual(includesEvenAge.includes({ name: "Sam", age: 10 }), true);
+
+it("find sum of numbers", function () {
+    assert.deepEqual(sumOfNumber(numArray), 422);
+    assert.deepEqual(numArray, [5, 0, 7, 77, -20, 300, 51, 2]);  //test for pure function
+});
+it("find average of numbers", function () {
+    assert.deepEqual(avgOfNumber(numArray), 52.75);
+    assert.deepEqual(numArray, [5, 0, 7, 77, -20, 300, 51, 2]);  //test for pure function
+});
+it("find max of numbers", function () {
+    assert.deepEqual(maxOfNumber(numArray), 300);
+    assert.deepEqual(numArray, [5, 0, 7, 77, -20, 300, 51, 2]);  //test for pure function
+});
+it("find max age ", function () {
+    assert.deepEqual(findMaxAge(peopleArray),
+        80);
+    assert.deepEqual(peopleArray,
+        [{ name: "Sam", age: 15 }, { name: "William", age: 6 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 80 }]);
+});
+it("includes even ages", function () {
+    assert.strictEqual(includesEvenAge(peopleArray), true);
+    const peopleOddAge = [{ name: "Sam", age: 15 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 81  }];
+    assert.strictEqual(includesEvenAge(peopleOddAge), false);
+});
+it("sum even age ", function () {
+    assert.deepEqual(sumEvenAge(peopleArray),43);
+    assert.deepEqual(peopleArray,
+        [{ name: "Sam", age: 15 }, { name: "William", age: 6 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 80 }]);
+});
+it("sum odd age ", function () {
+    assert.deepEqual(sumOddAge(peopleArray),14);
+    assert.deepEqual(peopleArray,
+        [{ name: "Sam", age: 15 }, { name: "William", age: 6 }, { name: "Lucy", age: 13 }, { name: "Barney", age: 80 }]);
+});
 });
 
-});
+
+
+

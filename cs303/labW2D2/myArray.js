@@ -56,3 +56,13 @@
     return sum
     }
     console.log(myreduce([1,2,3,4,3],sumValue))
+
+    // funcation myreduce(arr,sumValue){
+    //     if(arr.length==1){
+    //         return sumValue(arr[1])
+    //     }else{
+    //         return sumValue(arr[i])+myreduce(arr.length-1,sumValue)
+    //     }
+    // }
+
+    

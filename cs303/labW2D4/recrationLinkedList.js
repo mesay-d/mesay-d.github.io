@@ -1,11 +1,11 @@
 let list = {
-    value: "love",
+    value: "mesay",
     next: {
       value: "honey",
       next: {
-        value: "abab",
+        value: "luwam",
         next: {
-          value: "mesay",
+          value:"chimid" ,
           next: null
         }
       }
@@ -14,79 +14,84 @@ let list = {
   
   function printRevers (list) {
   
-  ; // output the current item
+
   
     if (list) {
-      return  printList(list.next)+list.value+" " // do the same for the rest of the list
+      return printRevers(list.next)+list.value+"" // do the same for the rest of the list
     }
     return "";
   
   }
   
-  console.log(printList(list)) ;
+  
   function  printList(list){
-    let array=[];
+    
     if (list) {
-      return  list.value+" "+ printList(list.next) // do the same for the rest of the list
+      return  list.value+""+ printList(list.next) // do the same for the rest of the list
     }
     return "";
 
   }
-console.log(printRevers(list))
-// // let node3 = {
-// //   name: "p",
-// //   value: "This is text in the a paragraph",
-// //   children: null
-// //  };
-// //  let node4 = {
-// //   name: "label",
-// //   value: "Name", 
-// //   children: null
-// //  };
-// //  let node5 = {
-// //   name: "input",
-// //   value: "this was typed by a user",
-// //   children: null
-// //  };
-// //  let node2 = {
-// //   name: "div",
-// //   value: null,
-// //   children: [node4, node5]
-// //  };
-// //  let node1 = {
-// //   name: "body",
-// //   children: [node2, node3],
-// //   value: null,
-// //  };
 
-// let list = {
-//   name: "mesay",
-   
-//     next: {
-//       name: "daniel",
-     
-//       next: {
-//         name: "chimid",
+class TreeNode {
+  constructor(value) {
+      this.value=value;
+      this.descendents = [];
+  }
+}
+
+const abe = new TreeNode('Abe');
+const homer = new TreeNode('Homer');
+const bart = new TreeNode('Bart');
+const lisa = new TreeNode('Lisa');
+const maggie = new TreeNode('Maggie');
+
+abe.descendents.push(homer);
+homer.descendents.push(bart, lisa, maggie);
+
+function printName(node) {
+  
+  // if (node.descendents === []) {
+  //     return "";
+  // }
+  // else {
+    console.log(node.value)
+
+      for (let descendent of node.descendents) {
+        
+         printName(descendent);
+      }
+ // }
+  //return ""
+}
+
+console.log(printName(abe));
+
+///////////////////////////////////////
+
+function contains(node, target) {
+    
+  if (node.descendents === null) {
+      if (node.value === target) {
+          return true;
+      } else {
+          return false;
+      }
+  } else { 
+      let childResult = false;
+      if (node.value === target) {
+          return true;
+      }
+      for (let child of node.descendents) {
+          childResult = contains(child, target);
+          if (childResult === true) {
+              return true;
+          }
+      }
+      return false; 
       
-   
-//         next: {
-//           name: "honey",
-       
-//           next: {
-//               name:null,
-//         }
-//       }
-//     }
-//   }};
-  
-//   function printList(list) {
-  
-//     console.log(list.name); // output the current item
-  
-//     if (list.next) {
-//       printList(list.next); // do the same for the rest of the list
-//     }
-  
-//   }
-  
-//   console.log(printList(list));
+  }
+}
+console.log(contains(homer, "Abe"));
+console.log(contains(homer, "Maggie")); 
+     

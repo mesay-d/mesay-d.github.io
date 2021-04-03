@@ -71,27 +71,31 @@ console.log(printName(abe));
 
 function contains(node, target) {
     
-  if (node.descendents === null) {
-      if (node.value === target) {
-          return true;
-      } else {
-          return false;
-      }
-  } else { 
-      let childResult = false;
-      if (node.value === target) {
-          return true;
-      }
-      for (let child of node.descendents) {
-          childResult = contains(child, target);
-          if (childResult === true) {
-              return true;
-          }
-      }
-      return false; 
+  // if (node.descendents === null) {
+  //     if (node.value === target) {
+  //         return true;
+  //     } else {
+  //         return false;
+  //     }
+  // } else { 
+  //     let childResult = false;
+  //     if (node.value === target) {
+  //         return true;
+  //     }
+  //     for (let child of node.descendents) {
+  //         childResult = contains(child, target);
+  //         if (childResult === true) {
+  //             return true;
+  //         }
+  //     }
+  //     return false; 
       
+  // }
+  if(node.next===null){
+    
   }
 }
 console.log(contains(homer, "Abe"));
 console.log(contains(homer, "Maggie")); 
+
      

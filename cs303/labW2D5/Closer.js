@@ -7,22 +7,22 @@
 
 // sayHi();
 
-function makeCounter() {
-    let count = 0;
-    /**
-    * @returns {number} value of counter BEFORE increment
-    */
-    function increment() {
-    return count++;
-    }
-    return increment;
-   }
-   const counter1 = makeCounter();
-   const counter2 = makeCounter();
-   counter1();
-   counter1();
-   //counter2();
-   console.log("expect 2 ", counter1());
+// function makeCounter() {
+//     let count = 0;
+//     /**
+//     * @returns {number} value of counter BEFORE increment
+//     */
+//     function increment() {
+//     return count++;
+//     }
+//     return increment;
+//    }
+//    const counter1 = makeCounter();
+//    const counter2 = makeCounter();
+//    counter1();
+//    counter1();
+//    //counter2();
+//    console.log("expect 2 ", counter1());
    //console.log("expect 1 ", counter2());
 
 //   function makeArmy() {
@@ -175,3 +175,33 @@ function makeCounter() {
   
 //   let army = makeArmy();
 //  army[4]()
+
+// function sayHii() {
+//  console.log('Hello');
+//   }
+//   let result=sayHii()
+
+//   setTimeout(sayHii, 8000);
+//   console.log("i am super")
+  // function sayHi(phrase, who) {
+  //  console.log( phrase + ', ' + who );
+
+  //   }
+  //   setTimeout(sayHi, 1000, "Hello", "John"); 
+  //   console.log("i am here")
+
+  //   function sayHo(){
+  //     return function(){
+  //       console.log("hi")
+  //     }
+  //   }
+  //   setTimeout(sayHo(),9000)
+
+  // const temeid=setTimeout(()=>console.log("hi.......me"),5000)
+  // clearTimeout(temeid);
+  const timerid=setInterval(() => {
+    console.log(new Date())},1000)
+setTimeout(() => {
+  clearInterval(timerid)
+  
+}, 5000);

@@ -1,44 +1,65 @@
-"use strict";
-/* exports at end of file since exporting an object, which can only be referenced after definition */
-/* eslint-disable */
+// "use strict";
+// /* exports at end of file since exporting an object, which can only be referenced after definition */
+// /* eslint-disable */
 
 
-function askPassword(ok, fail) {
-    let password ="rockstar";
-    if (password === "rockstar") return ok();
-    else return fail();
-  }
+// function askPassword(ok, fail) {
+//     let password ="rockstar";
+//     if (password === "rockstar") return ok();
+//     else return fail();
+//   }
   
-  let user = {
-    name: 'John',
+//   let user = {
+//     name: 'John',
   
-    loginOk() {
-      return`${this.name} logged in`;
-    },
+//     loginOk() {
+//       return`${this.name} logged in`;
+//     },
   
-    loginFail() {
-      return`${this.name} failed to log in`;
-    },
+//     loginFail() {
+//       return`${this.name} failed to log in`;
+//     },
   
-  };
+//   };
   
- console.log(askPassword(user.loginOk.bind(user), user.loginFail.bind(user)));
- function askPassword2(ok, fail) {
-    let password ="rockstar";
-   if (password == "rockstar") return ok();
-   else return fail();;
- }
+//  console.log(askPassword(user.loginOk.bind(user), user.loginFail.bind(user)));
+//  function askPassword2(ok, fail) {
+//     let password ="rockstar";
+//    if (password == "rockstar") return ok();
+//    else return fail();;
+//  }
  
- let user2 = {
-   name: 'John',
+//  let user2 = {
+//    name: 'John',
  
-   login(result) {
-     return( this.name + (result ? ' logged in' : ' failed to log in') );
-   }
- };
+//    login(result) {
+//      return( this.name + (result ? ' logged in' : ' failed to log in') );
+//    }
+//  };
  
- console.log(askPassword2(()=>user2.login(true), ()=>user2.login(false))); 
+//  console.log(askPassword2(()=>user2.login(true), ()=>user2.login(false))); 
 
-/* You need the module.exports when testing in node.  Comment it out when you send your file to the browser 
-*/
-//module.exports = {askPassword, user, askPassword2, user2 }; //add all of your function names here that you need for the node mocha tests
+// /* You need the module.exports when testing in node.  Comment it out when you send your file to the browser 
+// */
+// //module.exports = {askPassword, user, askPassword2, user2 }; //add all of your function names here that you need for the node mocha tests
+
+
+
+
+// let group = {
+//   title: "Our Group",
+//   students: ["John", "Pete", "Alice"],
+//   showList() {
+//     console.log(this)
+//     const self=this
+//   this.students.forEach(function(student) {
+//   console.log(self.title + ': ' + student)
+//   })
+
+//   //this.students.forEach((student)=>console.log(this.title +":"+student))
+//   ;
+//   }
+//   };
+//   group.showList();
+
+// 

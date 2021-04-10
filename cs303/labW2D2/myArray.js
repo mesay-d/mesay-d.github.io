@@ -48,14 +48,14 @@
     * @param {array} arr 
     * @param {numuber} sumValue 
     */
-    function myreduce(arr,sumValue){
-    let sum=0
+    function myreduce(arr,sumValue,intialvalue){
+    let sum=intialvalue;
     for(let key of arr){
     sum=sumValue(sum, key)
     }
     return sum
     }
-    console.log(myreduce([1,2,3,4,3],sumValue))
+    console.log(myreduce([1,2,3,4,3],sumValue,0))
 
     // funcation myreduce(arr,sumValue){
     //     if(arr.length==1){

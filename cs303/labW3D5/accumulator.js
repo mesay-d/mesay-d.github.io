@@ -1,5 +1,5 @@
 "use strict";
-
+//module.exports = {Accumulator, findAuthors, addBook,findIDs };
 function Accumulator(initialValue, increment){
 this.initialValue=initialValue;
 this.increment=increment;

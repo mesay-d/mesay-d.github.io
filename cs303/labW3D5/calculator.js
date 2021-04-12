@@ -1,29 +1,34 @@
 
 
-"use strict";
+// "use strict";
 
-function Calculator(){
+// function Calculator(){
     
-}
-Calculator.prototype.setValue=function(a,b){
-    this.a=a;
-    this.b=b;
-}
+// }
+// Calculator.prototype.setValue=function(a,b){
+//     this.a=a;
+//     this.b=b;
+// }
     
-     Calculator.prototype.sum=function(){
-       return this.a+this.b;
+//      Calculator.prototype.sum=function(){
+//        return this.a+this.b;
+//     };
+    
+//      Calculator.prototype.mul=function(){
+//         return this.a*this.b;
+//     }
+    
+//      Calculator.prototype.sub=function(){
+//         return this.a-this.b
+//     }
+    
+//      Calculator.prototype.div=function(){
+//         return this.a/this.b;
+//     }
+
+function makeCounter() {
+    let count = 0;
+    return function(x) { 
+        return count+=3; 
     };
-    
-     Calculator.prototype.mul=function(){
-        return this.a*this.b;
     }
-    
-     Calculator.prototype.sub=function(){
-        return this.a-this.b
-    }
-    
-     Calculator.prototype.div=function(){
-        return this.a/this.b;
-    }
-
-    

@@ -1,4 +1,5 @@
 "use strict"
+
 const bicyle={
     gear :1,
     speed:0,

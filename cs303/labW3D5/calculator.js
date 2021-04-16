@@ -25,10 +25,3 @@
 //      Calculator.prototype.div=function(){
 //         return this.a/this.b;
 //     }
-
-function makeCounter() {
-    let count = 0;
-    return function(x) { 
-        return count+=3; 
-    };
-    }

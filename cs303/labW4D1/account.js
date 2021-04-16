@@ -43,7 +43,7 @@ class Account {
      * @returns {undefined}
      * @throws {RangeError} when amount is less than or equal to zero
      */
-    deposit(amount) {
+     deposit(amount) {
         if (amount <= 0) {
             throw new RangeError("Deposit amount has to be greater than zero");
         }
@@ -58,7 +58,7 @@ class Account {
      * @throws {RangeError} when amount is less than or equal to zero
      * @throws {Error} when the account has insufficient funds (balance)
      */
-    withdraw(amount) {
+     withdraw(amount) {
         if (amount <= 0) {
             throw new RangeError("Withdraw amount has to be greater than zero");
         }
@@ -85,6 +85,5 @@ class Account {
     }
 }
 
-/* You need the module.exports when testing in node.  Comment it out when you send your file to the browser 
-*/
+
 exports.Account = Account;

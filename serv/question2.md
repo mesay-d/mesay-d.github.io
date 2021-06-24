@@ -1,6 +1,6 @@
 question 1
 Explain why do we want sometimes to use setImmediate instead of using setTimeout?
-setTimeout runs in Timer phase, setImmediate runs in check phase. For example: If there's a case needs to run just before close phase, we can use setImmediate.
+setTimeout runs in Timer phase, setImmediate runs in check phase.
 
 question 2
 

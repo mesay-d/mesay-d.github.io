@@ -1,0 +1,83 @@
+[{
+  "_id": {
+    "$oid": "6113bddfb6687d86e3808751"
+  },
+  "id": 1,
+  "BookTitle": "1Agile software Development",
+  "ISBN": null,
+  "Datepublished": "62020-10-25",
+  "publisher": "7prentice-Hall",
+  "overdue": "$1.05"
+},{
+  "_id": {
+    "$oid": "6113be27b6687d86e3808752"
+  },
+  "id": 2,
+  "BookTitle": "Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+},{
+  "_id": {
+    "$oid": "6113be77c1589193bda5c919"
+  },
+  "BookTitle": "Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75",
+  "id": 1
+},{
+  "_id": {
+    "$oid": "6113be7ac1589193bda5c91a"
+  },
+  "BookTitle": "Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75",
+  "id": 2
+},{
+  "_id": 1,
+  "BookTitle": "111Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+},{
+  "_id": 2,
+  "BookTitle": "111Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+},{
+  "_id": 3,
+  "BookTitle": "Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+},{
+  "_id": 4,
+  "BookTitle": "Core java - Fundamentals 12th Edition",
+  "ISBN": null,
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+},{
+  "_id": 5,
+  "BookTitle": "klCore java - Fundamentals 12th Edition",
+  "ISBN": "978-0135166307",
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+},{
+  "_id": 6,
+  "BookTitle": "klCore java - Fundamentals 12th Edition",
+  "ISBN": "978-0135166307",
+  "Datepublished": "2018-08-27",
+  "publisher": "Pearson",
+  "overdue": "$1.75"
+}]
